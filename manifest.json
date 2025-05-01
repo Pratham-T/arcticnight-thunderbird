@@ -1,0 +1,90 @@
+{
+	"manifest_version": 2,
+	"name": "Arctic Night",
+	"description": "Arctic Night theme for thunderbird",
+	"version": "0.9",
+	"author": "T Pratham",
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "pratham.arcticnight@addons.thunderbird.net",
+			"strict_min_version": "115.0"
+		}
+	},
+	"theme_experiment": {
+		"colors": {
+			"spaces_toolbar": "--spaces-bg-color",
+			"message_area": "--tree-pane-background",
+			"tree_view_bg": "--tree-view-bg",
+			"message_card_text": "--tree-view-color"
+		},
+		"stylesheet": "style.css"
+	},
+	"theme": {	
+		"images": {
+			"additional_backgrounds": [
+				"images/background-noodles-right-dark.svg",
+				"images/background-noodles-left-dark.svg",
+				"images/background-gradient-dark.svg"
+			]
+		},
+		"properties": {
+			"additional_backgrounds_alignment": [
+				"right top",
+				"left top",
+				"right top"
+			],
+			"additional_backgrounds_tiling": [
+				"no-repeat",
+				"no-repeat",
+				"repeat-x"
+			],
+			"color_scheme": "dark",
+			"content_color_scheme": "dark"
+		},
+		"colors": {
+			"spaces_toolbar": "#090824",
+			"message_area": "rgb(4,2,24)",
+			"tree_view_bg": "rgb(4,2,24)",
+			"message_card_text": "#fff",
+			
+			"button_background_active": "rgba(110,110,255,.6)",
+			"button_background_hover": "rgba(60,110,210,.7)",
+      		
+      		"tab_text": "#000000",
+      		"tab_line": "#6f2fe2",
+      		"tab_loading": "#5781ff",
+      		"tab_background_separator": "rgba(87,230,255,.8)",
+      		"tab_background_text": "#c0eef0",
+      		"tab_selected": "rgba(165,190,236,.9)",
+      		
+      		"toolbar": "rgba(5,10,42,.85)",
+      		"toolbar_field": "#a8b4cb",
+      		"toolbar_field_text": "#222",
+      		"toolbar_field_highlight": "#1f9afd",
+      		"toolbar_field_highlight_text": "#fff",
+      		"toolbar_field_border": "#999",
+      		"toolbar_field_focus": "#f2f2f2",
+      		"toolbar_field_text_focus": "#000",
+      		"toolbar_field_border_focus": "#1f9afd",
+      		"toolbar_top_separator": "#aaa",
+      		"toolbar_bottom_separator": "#888",
+      		"toolbar_vertical_separator": "#888",
+      		"toolbar_text": "#fff",
+      		
+      		"icons": "#c0eef0",
+      		
+      		"sidebar": "#02001f",
+      		"sidebar_text": "#fff",
+      		"sidebar_highlight": "rgba(110,110,255,.6)",
+      		"sidebar_highlight_border": "rgba(169,191,226,.7)",
+      		"sidebar_highlight_text": "#fff",
+      		"sidebar_border": "rgba(168,180,203,.7)",
+      		
+      		"popup": "#110e39",
+      		"popup_text": "#000",
+      		"popup_border": "#c0eef0",
+      		"popup_highlight": "#005a77",
+      		"popup_highlight_text": "#fff"
+		}
+	}
+}

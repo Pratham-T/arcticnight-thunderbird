@@ -1,0 +1,69 @@
+:host, :root {
+	/* Background */
+	/*--bg-0: #02001f;*/
+	--bg-0: #010c3f;
+	--bg-0-hard: #02001f;
+	--bg-1: #110e39;
+	--bg-2: #211e52;
+	--bg-3: #2f2b69;
+	--bg-4: #3f3a82;
+
+	--layout-background-0: var(--bg-0) !important;
+	--layout-background-1: var(--bg-1) !important;
+	--layout-background-2: var(--bg-2) !important;
+	--layout-background-3: var(--bg-3) !important;
+	--layout-background-4: var(--bg-4) !important;
+
+	--unread-color: #3dffa4 !important;
+
+	@media not (prefers-contrast) {
+		--tree-card-border: color-mix(in srgb, var(--tree-card-background, #000) 30%, white);
+	}
+}
+
+.mail-toolbox, .contentTabToolbox {
+	:root[lwtheme] & {
+		color: #1b1720 !important;
+		--toolbarbutton-icon-fill: #000;
+	}
+}
+
+#threadTree tbody {
+  & [data-properties~="unread"] {
+    color: var(--unread-color);
+  }
+}
+
+calendar-minimonth {
+	--mmMainBackground: var(--bg-3) !important; /*Review this*/
+	--mmMainBorderColor: var(--bg-1) !important;
+	--mmHighlightColor: var(--sidebar-highlight-text-color, var(--selected-item-color)) !important;
+	--mmHighlightBackground: var(--sidebar-highlight-background-color, var(--selected-item-color)) !important;
+	--mmHighlightBorderColor: var(--sidebar-highlight-background-color, var(--selected-item-color)) !important;
+	--mmBoxBackground: var(--bg-4) !important;
+	--mmBoxBorderColor: var(--bg-0) !important; /* Review this */
+	--mmBoxItemColor: var(--bg-0) !important; /* Review this */
+	--mmDayTodayColor: #c0eef0 !important;
+	--mmDayColor: #c0eef0 !important;
+	/*--mmDayOtherColor: var(--color-gray-50) !important;*/
+	--mmDaySelectedColor: #00ebca !important;
+	--mmDaySelectedBackground: color-mix(in srgb, var(--color-cyan-30, #c0eef0) 20%, transparent) !important; /*Review this*/
+	/*--mmDaySelectedBorderColor: ;*/
+	/*--mmDaySelectedTodayBackground: ;*/
+	/*--mmDaySelectedTodayBorderColor: ;*/
+	/*--mmDayWeekColor: ;*/
+	/*--mmDayBusyColor: ;*/
+}
+
+@media (prefers-color-scheme: dark) {
+	.button.minimonth-nav-btn:is(:hover, :active),
+	.button.minimonth-nav-btn:enabled:is(:hover, :active) {
+		 background-color: var(--bg-3) !important;
+	}
+}
+
+#minimonth-pane calendar-minimonth,
+#recurrencePreview calendar-minimonth {
+	background-color: var(--bg-0);
+}
+
